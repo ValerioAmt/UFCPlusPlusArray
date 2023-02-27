@@ -1,0 +1,1 @@
+cout << "La lettera " << inserimento[i] << "è ripetuta" << quanteVolte << "volte";

@@ -2,23 +2,36 @@
 #include <string>
 using namespace std;
 
-int main(){
+int main()
+{
 
-string inserimento ;
-cout <<"Inserisci una parola" << endl;
-cin >> inserimento;
+    string inserimento;
+    cout << "Inserisci una parola" << endl;
+    cin >> inserimento;
+    int quanteVolte = 0;
+    for (int i = 0; i < inserimento.length()-1; i++)
+    {
+        for (int y = 1; y < inserimento.length()-1; y++)
+        {
+            if (inserimento[i] == inserimento[y]) // inserimento[] ==  stoi(inserimento.length()-1))
+            {
+                int quanteVolte;
+                quanteVolte += y;
+            }
+            cout << "La lettera "
+                 << " " << inserimento[i] << " è ripetuta" << quanteVolte << "volte. Di conseguenza la parola non  è univoca";
 
-              for (int i = 0; i < inserimento.length; i++){
-                           for(y=0;y < inserimento.length(){
+            else if (i == inserimento.length() - 1)
+            {
+                break;
+            }
+            else
+            {
+                cout << "La parola ha caratteri univoci!!!";
+                break;
+            }
 
-                            if(inserimento[i] == inserimento[y])
-
-                           }
-                        
-              }
-
-
-
-
-
+            break;
+        }
+    }
 }
