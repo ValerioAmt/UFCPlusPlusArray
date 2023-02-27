@@ -10,8 +10,8 @@ cin >> inserimento;
 
               for (int i = 0; i < inserimento.length; i++){
                            for(y=0;y < inserimento.length(){
-                            
-                            if(inserimento[i])
+
+                            if(inserimento[i] == inserimento[y])
 
                            }
                         
