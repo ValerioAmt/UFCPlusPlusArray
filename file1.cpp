@@ -17,10 +17,10 @@ int main()
             {
                 int quanteVolte;
                 quanteVolte++;
-            }
-          else if (i < inserimento.length() - 1 )
-          {
-                       cout << "La lettera "<< " " << inserimento[i] << " è ripetuta" << quanteVolte << "volte. Di conseguenza la parola non  è univoca";
+            
+           if (i < inserimento.length() - 1 )
+          
+                       cout << "La lettera " << "-" <<inserimento[i]<<"-" << " è ripetuta" << quanteVolte << "volte. Di conseguenza la parola non  è univoca";
 
           }
 
