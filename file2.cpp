@@ -8,23 +8,24 @@ int main()
     int arrayInteri[8] ;
     int pari = 0;
     int dispari = 0;
-    for (int i = 0; i < 8; i++)
+    int grandezza = sizeof(arrayInteri)/sizeof(arrayInteri[0]);
+    for (int i = 0; i < grandezza; i++)
     {
         cout << "Inserisci un numero"<<endl;
         cin >> arrayInteri[i];
     }
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < grandezza; i++)
     {
         if (arrayInteri[i] % 2 == 0)
         {
-            pari + arrayInteri[i];
+            pari += arrayInteri[i];
         }
         else
         {
-            dispari + arrayInteri[i];
+            dispari += arrayInteri[i];
         }
     }
 
-    cout << "Somma degli elementi pari" << pari << "."
-         << "La somma dei numeri dispari è = " << dispari;
+    cout << "Somma degli elementi pari è " << pari << ". "
+         << "La somma dei numeri dispari è " << dispari;
 }
