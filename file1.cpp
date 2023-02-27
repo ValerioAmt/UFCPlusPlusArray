@@ -9,28 +9,25 @@ int main()
     cout << "Inserisci una parola" << endl;
     cin >> inserimento;
     int quanteVolte = 0;
-    for (int i = 0; i < inserimento.length()-1; i++)
+    bool risultato = false;
+    int y ;
+    string nonUnivoca = "la parola non ha caratteri univoci";
+    for (int i = 0; i < inserimento.length() - 1; i++)
     {
-        for (int y = i+1; y < inserimento.length()-1; y++)
+        if (inserimento[i] == inserimento[y] || i < inserimento.length() - 1)
         {
-            if (inserimento[i] == inserimento[y]) // inserimento[] ==  stoi(inserimento.length()-1))
+            for (int y = i + 1; y < inserimento.length() - 1; y++)
+            // inserimento[] ==  stoi(inserimento.length()-1))
             {
-                int quanteVolte;
+
+                cout << "La lettera " << "-" << inserimento[i] << "-"<< " è ripetuta" << quanteVolte << "volte. Di conseguenza  è univoca";
                 quanteVolte++;
-            
-           if (i < inserimento.length() - 1 )
-          
-                       cout << "La lettera " << "-" <<inserimento[i]<<"-" << " è ripetuta" << quanteVolte << "volte. Di conseguenza la parola non  è univoca";
-
-          }
-
-             
-           else {
-                cout << "La parola ha caratteri univoci!!!";
-                break;
             }
-
-            break;
+            else
+            {
+                return risultato;
+            }
         }
     }
+    cout << risultato;
 }
