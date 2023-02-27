@@ -5,12 +5,13 @@ using namespace std;
 int main()
 {
 
-    int arrayInteri[8] int pari = 0;
+    int arrayInteri[8] ;
+    int pari = 0;
     int dispari = 0;
     for (int i = 0; i < 8; i++)
     {
-        cout << "Inserisci un numero";
-        cin << arrayInteri[i];
+        cout << "Inserisci un numero"<<endl;
+        cin >> arrayInteri[i];
     }
     for (int i = 0; i < 8; i++)
     {
